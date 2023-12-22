@@ -1,0 +1,10 @@
+<p>Operation status</p>
+<div>
+<p *ngIf="statusmsg=='KO'" class="bg-danger">Status : {{statusmsg}}</p>    
+<p *ngIf="statusmsg=='OK'" class="bg-success">Status : {{statusmsg}}</p>    
+<table>
+    <tr *ngFor="let m of errmsgs">
+        <td>{{m}}</td>
+    </tr>
+</table>
+</div>
